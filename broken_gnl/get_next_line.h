@@ -1,7 +1,7 @@
 #ifndef GNL
 #define GNL
 #ifndef BUFFER_SIZE
-#define BUFFER_SIZE 10
+#define BUFFER_SIZE 1
 #endif
 #include <stdio.h>
 #include <unistd.h>

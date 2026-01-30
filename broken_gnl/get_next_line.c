@@ -59,7 +59,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	else if (dest == src)
 		return dest;
 	size_t i = ft_strlen((char*)src) - 1;
-	while (i >= 0)
+	while (i > 0)
 	{
 		((char*)dest)[i] = ((char*)src)[i];
 		i--;
@@ -98,7 +98,9 @@ int	main(void)
 {
 	int fd = open("teste.txt", O_RDONLY);
 	char *line = get_next_line(fd);
-	printf("%s\n", line);
+  char *line2 = get_next_line(fd);
+	printf("%s", line);
+	printf("%s", line2);
 	free(line);
 	return (0);
 }
