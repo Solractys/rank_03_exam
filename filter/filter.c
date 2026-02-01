@@ -32,16 +32,16 @@ int	main(int ac, char **av)
 	if (ac != 2 || av[1][0] == '\0')
 		return (1);
 	char *buffer = read_line();
-  char *limiter = av[1];
-  int limiter_len = strlen(limiter);
-  int i = 0;
-  int j = 0;
-  while (buffer[i] != '\0')
-  {
-    j = 0;
-    while (buffer[i + j] == limiter[j])
-      j++;
-    if (j == limiter_len)
+	char *limiter = av[1];
+	int limiter_len = strlen(limiter);
+	int i = 0;
+	int j = 0;
+	while (buffer[i] != '\0')
+	{
+	 j = 0;
+	while (buffer[i + j] == limiter[j])
+			j++;
+	if (j == limiter_len)
     {
       int x = j;
       while (x--)
