@@ -3,14 +3,6 @@
 
 int	count_numbers(char **str)
 {
-	int count = 0;
-	int i = 0;
-	while (str[i] != NULL)
-	{
-		count++;
-		i++;
-	}
-	return (count);
 }
 
 int *create_num_array(char **argv)
